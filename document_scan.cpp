@@ -94,8 +94,11 @@ Mat getWarp(Mat img, vector<Point> points, float w, float h)
 }
 
 void main() {
+	string str;
 
-	string path = "C:/Users/mss33/Desktop/input/paper.jpg";
+	cin >> str;
+
+	string path = "C:/Users/mss33/Desktop/input/" + str;
 	imgOriginal = imread(path);
 
 	imgThre = preProcessing(imgOriginal);
