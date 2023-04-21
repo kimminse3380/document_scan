@@ -98,7 +98,7 @@ void main() {
 
 	cin >> str;
 
-	string path = "C:/Users/mss33/Desktop/input/" + str;
+	string path = "지정 경로" + str;
 	imgOriginal = imread(path);
 
 	imgThre = preProcessing(imgOriginal);
@@ -115,7 +115,7 @@ void main() {
 	imshow("Image", imgOriginal);
 	imshow("Image Crop", imgCrop);
 
-	imwrite("C:/Users/mss33/Desktop/result/result.jpg", imgCrop);
+	imwrite("원하는 경로", imgCrop);
 
 	waitKey(0);
 
